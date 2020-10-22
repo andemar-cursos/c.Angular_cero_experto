@@ -4,11 +4,8 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
