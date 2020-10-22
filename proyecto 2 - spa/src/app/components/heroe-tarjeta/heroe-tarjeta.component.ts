@@ -25,8 +25,8 @@ export class HeroeTarjetaComponent implements OnInit {
   verHeroe(): void {
 
     // Este es un router con js, pero en html hay otra forma. line: 17
-    // this.router.navigate(['/heroe', this.index]);
-    this.heroeSeleccionado.emit(this.index);
+    this.router.navigate(['/heroe', this.index]);
+    // this.heroeSeleccionado.emit(this.index);
   }
 
 }
