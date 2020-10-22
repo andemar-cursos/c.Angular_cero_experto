@@ -17,6 +17,7 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { BuscarComponent } from './components/buscar/buscar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AboutComponent,
     HeroesComponent,
     HeroeComponent,
-    BuscarComponent
+    BuscarComponent,
+    HeroeTarjetaComponent
   ],
   imports: [
     BrowserModule,
