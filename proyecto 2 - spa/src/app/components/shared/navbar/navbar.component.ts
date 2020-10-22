@@ -8,4 +8,8 @@ export class NavbarComponent {
 
   constructor() { }
 
+  buscarHeroe(termino: string): void {
+    console.log(termino);
+  }
+
 }
