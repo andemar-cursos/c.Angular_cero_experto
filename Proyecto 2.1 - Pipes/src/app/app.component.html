@@ -41,17 +41,27 @@
         <tr>
           <td> {{PI}} </td>
           <td> number</td>
-
+          
           <!-- Sin decimales -->
           <!-- <td> {{PI | number:'1.0-0'}}</td> -->
-
+          
           <!-- Unidades entersa -->
           <!-- <td> {{PI | number:'3.0-0'}}</td> -->
-
+          
           <!-- *entersa, solo 2 decimales -->
           <td> {{PI | number:'.0-2'}}</td>
         </tr>
-
+        <tr>
+          <td> {{porcentaje}} </td>
+          <td> percent</td>
+          <td> {{porcentaje | percent}}</td>
+        </tr>
+        <tr>
+          <td> {{porcentaje}} </td>
+          <td> percent:'2.2-2'</td>
+          <td> {{porcentaje | percent:'2.2-2'}}</td>
+        </tr>
+        
       </tbody>
     </table>
 
