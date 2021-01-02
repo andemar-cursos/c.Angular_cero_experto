@@ -16,9 +16,6 @@ export class SpotifyService {
 
     });
 
-    this.htpp.get('https://api.spotify.com/v1/browse/new-releases', {headers})
-      .subscribe(data => {
-        console.log(data);
-      });
+    return this.htpp.get('https://api.spotify.com/v1/browse/new-releases', {headers});
   }
 }
