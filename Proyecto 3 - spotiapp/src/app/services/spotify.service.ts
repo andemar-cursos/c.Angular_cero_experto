@@ -55,8 +55,23 @@ export class SpotifyService{
               .toPromise();
   }
   
+  
+  async getTopTracks(id: string) {
+    
+    let token: string = await this.generateToken();
+
+    return this.getQuery(`artists/${id}/top-tracks?country=us`, token)
+              .pipe( map(data => data['tracks']))
+              .toPromise();
+  }
+  
 
 
+
+
+
+
+  //--------------------------------------------------------\\
   generateToken() {
     let body: string = '';
     body += 'grant_type=client_credentials';
