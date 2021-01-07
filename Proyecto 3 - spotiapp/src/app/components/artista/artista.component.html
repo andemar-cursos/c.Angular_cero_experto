@@ -40,12 +40,13 @@
                         <td>{{track.album.name}}</td>
                         <td>{{track.name}}</td>
                         <td>
-                            <audio [src]="track.preview_url" controls></audio>
+                            <!-- Se debe hacer un pipe, para hacer sanitizer del url -->
+                            <iframe [src]="track.uri | trackSpotify" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                         </td>
                     </tr>
                 </tbody>
             </table>
-
+        
         </div>
     </div>
 

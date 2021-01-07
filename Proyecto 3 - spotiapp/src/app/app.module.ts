@@ -11,7 +11,9 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NoimagePipe } from './pipes/noimage.pipe';
 import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
-import { LoadingComponent } from './components/shared/loading/loading.component'
+import { LoadingComponent } from './components/shared/loading/loading.component';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
+import { TrackSpotifyPipe } from './pipes/track-spotify.pipe'
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     NavbarComponent,
     NoimagePipe,
     TarjetasComponent,
-    LoadingComponent
+    LoadingComponent,
+    DomseguroPipe,
+    TrackSpotifyPipe
   ],
   imports: [
     BrowserModule,
