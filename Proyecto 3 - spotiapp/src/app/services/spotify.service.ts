@@ -36,7 +36,7 @@ export class SpotifyService{
   }
 
 
-  async getArtista(termino: string) {
+  async getArtistas(termino: string) {
     
     let token: string = await this.generateToken();
 
@@ -44,6 +44,17 @@ export class SpotifyService{
               .pipe( map(data => data['artists'].items))
               .toPromise();
   }
+  
+  
+  async getArtista(id: string) {
+    
+    let token: string = await this.generateToken();
+
+    return this.getQuery(`artists/${id}`, token)
+              //.pipe( map(data => data['artists'].items))
+              .toPromise();
+  }
+  
 
 
   generateToken() {
