@@ -12,8 +12,14 @@ export class DeseosService {
 
     const lista1 = new Lista('Recolectar piedras del inifinito');
     const lista2 = new Lista('Heores a desaparecer');
-
+    
     this.listas.push(lista1, lista2);
   }
-
+  
+  
+  crearList(titulo: string) {
+    
+    const lista3 = new Lista(titulo);
+    this.listas.push(lista3);
+  }
 }
