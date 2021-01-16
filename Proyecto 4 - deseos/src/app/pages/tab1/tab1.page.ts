@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DeseosService } from '../../services/deseos.service';
+import { Lista } from '../../models/lista.model';
 
 @Component({
   selector: 'app-tab1',
@@ -9,7 +10,7 @@ import { DeseosService } from '../../services/deseos.service';
 export class Tab1Page {
 
   constructor( public deseoService: DeseosService) {
-
+    
   }
 
 }
