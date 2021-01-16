@@ -16,9 +16,19 @@ export class DeseosService {
   
   crearList(titulo: string) {
     
-    const lista3 = new Lista(titulo);
-    this.listas.push(lista3);
+    const nuevaLista = new Lista(titulo);
+    this.listas.push(nuevaLista);
     this.guardarStorage();
+
+    return nuevaLista.id;
+  }
+
+
+  getListById(id: string | number) {
+
+    id = Number(id);
+
+    return this.listas.find(listaData => listaData.id === id);
   }
 
 

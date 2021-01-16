@@ -44,7 +44,10 @@ export class Tab1Page {
           text: 'Crear',
           handler: (data) => {
             if(data.titulo.leght === 0) return;
-            this.deseoService.crearList(data.titulo);
+            
+            const id = this.deseoService.crearList(data.titulo);
+
+            this.router.navigateByUrl(`/tabs/tab1/agregar/${id}`)
           }
         }
       ]
