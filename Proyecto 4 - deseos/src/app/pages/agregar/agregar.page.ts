@@ -31,8 +31,6 @@ export class AgregarPage implements OnInit {
   }
 
 
-
-
   agregarItem() {
     
     if(this.nombreItem.length === 0) return;
@@ -62,4 +60,11 @@ export class AgregarPage implements OnInit {
 
     this.deseosService.guardarStorage();
   }
+
+  borrar(i: number) {
+    this.lista.items.splice(i, 1);
+    this.deseosService.guardarStorage();
+  }
+
+
 }
